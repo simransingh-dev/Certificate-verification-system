@@ -281,7 +281,7 @@ const AdminDashboard = () => {
                               style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}
                               disabled={loading}
                             >
-                              Generate Certificate
+                              {loading ? "Generating..." : "Generate Certificate"}
                             </button>
                           )}
                           {student.certificateIssued && (
